@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18140096306"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18140096306');
+</script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Stop the Pain Today — Nigeria-China Friendship Hospital, Lagos</title>
@@ -409,7 +417,7 @@ footer strong{color:#fff}
       <p class="hero-sub">
         Whether it's back pain, joint pain, stomach pain, gout, sciatica, or chronic discomfort
         — our Chinese medical specialists in Lagos treat the <strong style="color:#fff;font-weight:700">root cause</strong>,
-        not just the symptoms. Fast, lasting relief without heavy drugs or Surgery.
+        not just the symptoms.  Fast, lasting relief without heavy drugs or Surgery.
       </p>
       <div class="pain-pills">
         <span class="pain-pill">Back Pain</span>
@@ -426,7 +434,7 @@ footer strong{color:#fff}
         <span class="pain-pill">Toothache</span>
       </div>
       <div class="hero-trust-row">
-        <div class="trust-item"><div class="trust-item-icon">🏅</div>Certified Chinese Doctors and Interpreters  </div>
+        <div class="trust-item"><div class="trust-item-icon">🏅</div>Certified Chinese Doctors and Interpreters</div>
         <div class="trust-item"><div class="trust-item-icon">📍</div>Ikeja &amp; Victoria Island</div>
         <div class="trust-item"><div class="trust-item-icon">⚡</div>Same-Day Appointments</div>
         <div class="trust-item"><div class="trust-item-icon">🌿</div>No Side Effects</div>
@@ -436,8 +444,8 @@ footer strong{color:#fff}
     <!-- RIGHT FORM -->
     <div class="hero-form-wrap" id="form-card">
       <div id="form-screen">
-        <div class="form-top-badge">Free First Consultation.</div>
-        <h2 class="form-title">Get Relief Today.<br>Book Your Free Visit.</h2>
+        <div class="form-top-badge">Free First Consultation </div>
+        <h2 class="form-title">Get Relief Today.<br>Book Your First Visit.</h2>
         <p class="form-sub">Fill in your details. Our specialist team calls you within hours.</p>
 
         <form id="lead-form" novalidate>
@@ -665,9 +673,7 @@ footer strong{color:#fff}
 <script>
 // ── CONFIG ──────────────────────────────────
 const WA_NUMBER   = '2349157921451';
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwKnQskj89FV1Xk1IEHAHoGTMDd8UQtLcb-q8EjjjV0m9n-Um4uoiDPlCYVJowdABVq/exec';
-
-// ────────────────────────────────────────────
+const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbwKnQskj89FV1Xk1IEHAHoGTMDd8UQtLcb-q8EjjjV0m9n-Um4uoiDPlCYVJowdABVq/exec';
 
 // Min date = today
 const todayStr = new Date().toISOString().split('T')[0];
@@ -761,7 +767,7 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
 
   // Google Ads conversion (if gtag loaded)
   if (typeof gtag !== 'undefined') {
-    gtag('event', 'conversion', { send_to: 'AW-XXXXXXXX/XXXXXXXXXX' });
+    gtag('event', 'conversion', { send_to: 'AW-18140096306/CONVERSION_LABEL' });
   }
 });
 
