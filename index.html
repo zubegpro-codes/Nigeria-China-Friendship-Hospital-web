@@ -523,7 +523,7 @@ footer strong{color:#fff}
             <div class="err-msg" id="e-service">Please select your condition.</div>
           </div>
 
-          <button type="submit" class="btn-cta" id="submit-btn">
+          <button type="submit" class="btn-cta" id="submit-btn" onclick="return gtag_report_conversion();">
             Yes — Relieve My Pain Now →
           </button>
         </form>
@@ -670,24 +670,25 @@ footer strong{color:#fff}
   </a>
 </div>
 
-<!-- Event snippet for Submit lead form conversion page
+<!-- Event snippet for Submit lead form (1) conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-18140096306/HpOWCL_J77wcELLO78lD',
-        'value': 1.0,
-        'currency': 'USD',
-        'event_callback': callback
-    });
-    return false;
-  }
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18140096306/laNWCIn97rwcELLO78lD',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
+
 
 
 <script>
