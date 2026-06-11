@@ -448,7 +448,7 @@ footer strong{color:#fff}
         <h2 class="form-title">Get Relief Today.<br>Book Your First Visit.</h2>
         <p class="form-sub">Fill in your details. Our specialist team calls you within hours.</p>
 
-        <form id="lead-form" novalidate>
+        <form id="lead-form" novalidate onsubmit="gtag_report_conversion();">
           <div class="fgroup" id="grp-name">
             <label>Full Name <span class="req">*</span></label>
             <input type="text" id="f-name" placeholder="Your full name" autocomplete="name"/>
@@ -669,6 +669,26 @@ footer strong{color:#fff}
     WhatsApp
   </a>
 </div>
+
+<!-- Event snippet for Submit lead form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18140096306/HpOWCL_J77wcELLO78lD',
+        'value': 1.0,
+        'currency': 'USD',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
 
 <script>
 // ── CONFIG ──────────────────────────────────
